@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no"/>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1 shrink-to-fit=no"
+    />
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -10,8 +13,9 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <title>Hello, world!</title>
+    <title>todoapp</title>
   </head>
+
   <body>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
@@ -24,93 +28,154 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- Default Container for grid system -->
     <div class="container-fluid">
-      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom shadow-sm">
-        <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none" href="#">
-        <span class="fs-4">ToDo-Tracker</span>
-      </a>
-      <div class="d-grid gap-2 d-md-block">
-      <a class="btn btn-primary" href="overview.html">Overview</a>
-      <a class="btn btn-light" href="add.html">Add Todo</a>
-      <a class="btn btn-light" href="imprint.html">Impressum</a>
+      <header
+        class="d-flex flex-wrap justify-content-between py-3 mb-4 border-bottom shadow-sm"
+      >
+        <a
+          class="d-flex align-items-center text-dark text-decoration-none"
+          style="margin-left: 1rem"
+          href="#"
+        >
+          <span class="fs-4 ml-4">ToDo-Tracker</span>
+        </a>
+        <ul class="nav nav-pills">
+          <li class="nav nav-pills">
+            <a class="nav-link active" href="overview.html">Overview</a>
+          </li>
+          <li class="nav nav-pills">
+            <a class="nav-link" href="add.html">Add Todo</a>
+          </li>
+          <li class="nav nav-pills">
+            <a class="nav-link" href="imprint.html">Impressum</a>
+          </li>
+        </ul>
+      </header>
+
+      <div class="container-fluid">
+        <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+          <h1 class="text-center display-3">ToDo's</h1>
+          <br />
+          <a class="btn btn-success" href="/src/newTodo/newTodo.html" role="button">Add ToDo</a>
+        </div>
+
+        <div class="d-flex justify-content-center flex-wrap">
+          <div class="card mx-3 my-3" style="width: 25rem">
+            <div class="card-body">
+              <h5 class="card-title">ToDo 1</h5>
+              <p class="card-text">Fällig bis: TT.MM.JJJJ</p>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 25%"
+                  aria-valuenow="25"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  25%
+                </div>
+              </div>
+              <br />
+
+              <a class="btn btn-primary" href="edit.html" role="button">Edit</a>
+              <a class="btn btn-danger" href="#" role="button">Delete</a>
+            </div>
+          </div>
+
+          <div class="card mx-3 my-3" style="width: 25rem">
+            <div class="card-body">
+              <h5 class="card-title">ToDo 2</h5>
+              <p class="card-text">Fällig bis: TT.MM.JJJJ</p>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 50%"
+                  aria-valuenow="50"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  50%
+                </div>
+              </div>
+              <br />
+
+              <a class="btn btn-primary" href="edit.html" role="button">Edit</a>
+              <a class="btn btn-danger" href="#" role="button">Delete</a>
+            </div>
+          </div>
+
+          <div class="card mx-3 my-3" style="width: 25rem">
+            <div class="card-body">
+              <h5 class="card-title">ToDo 3</h5>
+              <p class="card-text">Fällig bis: TT.MM.JJJJ</p>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 16%"
+                  aria-valuenow="16"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  16%
+                </div>
+              </div>
+              <br />
+
+              <a class="btn btn-primary" href="edit.html" role="button">Edit</a>
+              <a class="btn btn-danger" href="#" role="button">Delete</a>
+            </div>
+          </div>
+
+          <div class="card mx-3 my-3" style="width: 25rem">
+            <div class="card-body">
+              <h5 class="card-title">ToDo 4</h5>
+              <p class="card-text">Fällig bis: TT.MM.JJJJ</p>
+              <div class="progress">
+                <div
+                  class="progress-bar bg-success"
+                  role="progressbar"
+                  style="width: 100%"
+                  aria-valuenow="100"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  100%
+                </div>
+              </div>
+              <br />
+
+              <a class="btn btn-primary" href="edit.html" role="button">Edit</a>
+              <a class="btn btn-danger" href="#" role="button">Delete</a>
+            </div>
+          </div>
+
+          <div class="card mx-3 my-3" style="width: 25rem">
+            <div class="card-body">
+              <h5 class="card-title">ToDo 5</h5>
+              <p class="card-text">Fällig bis: TT.MM.JJJJ</p>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 80%"
+                  aria-valuenow="80"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  80%
+                </div>
+              </div>
+              <br />
+
+              <a class="btn btn-primary" href="edit.html" role="button">Edit</a>
+              <a class="btn btn-danger" href="#" role="button">Delete</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    </header>
-    <div class="container-fluid">
-      <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-        <h1 class="text-center display-3"> ToDo's </h1>
-        <br>
-        <a class="btn btn-success" href="add.html" role="button">Add ToDo</a>
-    </div>
-
-    <!-- Flexbox um die Items zu zentrieren -->
-      <div class="d-flex justify-content-center flex-wrap">
-
-    <!-- Beispiel ToDo's mit Edit / Delete Button und Progressbar -->
-      <div class ="card mx-3 my-3" style="width: 25rem;" >
-        <div class="card-body ">
-          <h5 class="card-title">ToDo 1</h5>
-          <p class="card-text">Fällig bis: TT.MM.JJJJ</p>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-          </div><br>
-
-          <a class="btn btn-primary" href="edit.html" role="button">Edit</a>
-          <a class="btn btn-danger" href="#" role="button">Delete</a>
-        </div>
-      </div>
-
-      <div class ="card mx-3 my-3" style="width: 25rem;">
-        <div class="card-body">
-          <h5 class="card-title">ToDo 2</h5>
-          <p class="card-text">Fällig bis: TT.MM.JJJJ</p>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
-          </div><br>
-
-          <a class="btn btn-primary" href="edit.html" role="button">Edit</a>
-          <a class="btn btn-danger" href="#" role="button">Delete</a>
-        </div>
-      </div>
-
-      <div class ="card mx-3 my-3" style="width: 25rem;">
-        <div class="card-body">
-          <h5 class="card-title">ToDo 3</h5>
-          <p class="card-text">Fällig bis: TT.MM.JJJJ</p>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 16%" aria-valuenow="16" aria-valuemin="0" aria-valuemax="100">16%</div>
-          </div><br>
-
-          <a class="btn btn-primary" href="edit.html" role="button">Edit</a>
-          <a class="btn btn-danger" href="#" role="button">Delete</a>
-        </div>
-      </div>
-
-      <div class ="card mx-3 my-3" style="width: 25rem;">
-        <div class="card-body">
-          <h5 class="card-title">ToDo 4</h5>
-          <p class="card-text">Fällig bis: TT.MM.JJJJ</p>
-          <div class="progress">
-            <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
-          </div><br>
-
-          <a class="btn btn-primary" href="edit.html" role="button">Edit</a>
-          <a class="btn btn-danger" href="#" role="button">Delete</a>
-        </div>
-      </div>
-
-      <div class ="card mx-3 my-3" style="width: 25rem;">
-        <div class="card-body">
-          <h5 class="card-title">ToDo 5</h5>
-          <p class="card-text">Fällig bis: TT.MM.JJJJ</p>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-          </div><br>
-
-          <a class="btn btn-primary" href="edit.html" role="button">Edit</a>
-          <a class="btn btn-danger" href="#" role="button">Delete</a>
-        </div>
-      </div>
-
   </body>
 </html>
