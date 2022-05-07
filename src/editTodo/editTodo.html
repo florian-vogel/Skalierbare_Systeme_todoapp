@@ -14,6 +14,7 @@
       crossorigin="anonymous"
     />
     <link href="../shared/style.css" rel="stylesheet" />
+
     <title>todoapp</title>
   </head>
 
@@ -35,10 +36,9 @@
       >
         <a
           class="d-flex align-items-center pb-3 text-dark text-decoration-none"
-          style="margin-left: 1rem"
           href="#"
         >
-          <span class="fs-4 ml-4">ToDo-Tracker</span>
+          <span class="fs-4 mx-4">ToDo-Tracker</span>
         </a>
         <ul class="nav nav-pills">
           <li class="nav nav-pills pb-3">
@@ -47,8 +47,8 @@
           <li class="nav nav-pills pb-3">
             <a class="nav-link" href="../newTodo/newTodo.html">Add Todo</a>
           </li>
-          <li class="nav nav-pills pb-3">
-            <a class="nav-link" href="imprint.html">Impressum</a>
+          <li class="nav nav-pills pb-3 pe-4">
+            <a class="nav-link" href="../masthead/masthead.html">Impressum</a>
           </li>
         </ul>
       </header>
@@ -67,12 +67,19 @@
           </div>
           <div class="mb-3">
             <label class="form-label">Due Date</label>
-            <input type="date" class="form-control" value="10/10/2022" />
+            <input type="date" class="form-control" value="2022-05-09" />
             <div class="form-text">Till when has the todo to be finished</div>
           </div>
           <div class="mb-3">
             <label class="form-label">Progress</label>
-            <input type="range" class="form-range" min="1" max="10" step="1" />
+            <input
+              type="range"
+              class="form-range"
+              min="0"
+              max="10"
+              step="1"
+              value="2"
+            />
             <div class="form-text">Amout already done</div>
           </div>
           <button type="submit" class="btn btn-primary">Submit</button>
